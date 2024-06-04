@@ -1,0 +1,66 @@
+table{
+    width: 50%;
+    line-height: 40px;
+    border-collapse: collapse;
+    border:1px solid #333;
+    text-align: center;
+    background-color: white;
+}
+tr:nth-child(2n+2){
+    background-color: green;
+    color: white;
+}
+table:hover tr:nth-child(odd){
+    background-color: red;
+    color: yellow;
+}
+table:hover tr:nth-child(even){
+    background-color: yellow;
+    color: red;
+}
+
+div>p::before{
+    content: "Before";
+    font-size:xx-large;
+    color: red;
+}
+div>p::after{
+    content: "After";
+    font-size:xx-large;
+    color: red;
+}
+div>p:active{
+    background-color: yellow;
+    color: green;
+}
+p::first-letter{
+    font-size: 2em;
+}
+@keyframes anime{
+    from{
+        text-decoration: underline green 10px;
+         color: green;
+    }
+    to{
+        text-decoration: underline red 15px;
+        color: red;
+    }
+}
+@keyframes fl{
+    from{font-size: 30px;}
+    to{font-size: 50px;}
+}
+h2{
+    text-align: center;
+    animation: anime 4s infinite;
+}
+h2::first-letter{
+    animation: fl 4s infinite;
+}
+span{
+    animation: fl 4s infinite;
+}
+
+h2:hover{
+    background-color: green;
+}

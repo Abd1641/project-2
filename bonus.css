@@ -1,0 +1,37 @@
+div{
+    width: 50%;
+}
+h1{
+    text-align: center;
+    color:red;
+    font-size: 5em;
+}
+@keyframes background{
+    from{background-position: 0%;}
+    to{background-position: 100%;} 
+
+}
+h1.first{
+    background-image: url('1.png');
+    background-color: red;
+    background-clip: text;
+    color: transparent;
+    animation: background 4s infinite;
+    text-align: center;
+}
+.two{
+    background-image: url('ScreenShot-2022-1-30_23-11-42.png');
+    background-color: red;
+    background-clip: text;
+    color: transparent;
+    animation: background 4s infinite reverse;
+    text-align: center;
+}
+.first:hover{
+    font-size: 335%;
+    animation: background 4s infinite reverse;
+}
+.two:hover{
+    font-size: 335%;
+    animation: background 4s infinite;
+}
